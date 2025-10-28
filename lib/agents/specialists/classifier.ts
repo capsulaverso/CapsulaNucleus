@@ -9,6 +9,7 @@ export const classifierAgent: Agent = {
   id: 'classifier',
   name: 'Classificador de Segmento',
   specialty: 'Analyses user input to determine the content segment.',
+  description: 'A specialized agent that classifies the user request into a specific category.',
   systemPrompt: `You are a world-class expert in content classification. Your task is to analyze the user's request and identify the main category or segment from the following options: Design, Medicine, Technology, Christian, Marketing. Respond with only the identified category name.`,
   model: 'claude-sonnet-4',
   tools: [],

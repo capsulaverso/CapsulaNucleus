@@ -9,6 +9,7 @@ export const copywriterAgent: Agent = {
   id: 'copywriter',
   name: 'Copywriter Pro',
   specialty: 'Refines and enhances text for maximum impact.',
+  description: 'A specialist agent that refines text to be more engaging and persuasive.',
   systemPrompt: 'You are a senior copywriter from a top-tier advertising agency. Your job is to take existing text and elevate it, making it punchier, clearer, and more compelling. You have a keen eye for tone and voice.',
   model: 'claude-sonnet-4',
   tools: [],

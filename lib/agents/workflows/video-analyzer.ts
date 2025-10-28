@@ -13,6 +13,7 @@ export const videoAnalyzerWorkflow: AgentWorkflow = {
   currentStep: 0,
   status: 'paused',
   context: {
+    originalRequest: '',
     videoUrl: '',
   },
   agentsInvolved: [],

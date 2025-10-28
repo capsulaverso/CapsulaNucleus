@@ -11,6 +11,7 @@ const agentRegistry: Record<string, Agent> = {
     id: 'classifier',
     name: 'Classificador de Segmento',
     specialty: 'Analyses user input to determine the content segment.',
+    description: 'A specialized agent that classifies the user request into a specific category.',
     systemPrompt: 'You are an expert classifier...',
     model: 'claude-sonnet-4',
     tools: [],

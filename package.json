@@ -11,19 +11,22 @@
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.22.0",
-    "@langchain/anthropic": "^0.3.33",
-    "@langchain/core": "^0.3.79",
-    "@langchain/langgraph": "^1.0.1",
     "@supabase/ssr": "^0.4.0",
+    "@supabase/supabase-js": "^2.44.4",
+    "autoprefixer": "^10.4.21",
     "lucide-react": "^0.412.0",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18",
     "reactflow": "^11.11.4",
-    "zod": "^3.23.8"
+    "zod": "^3.23.8",
+    "openai": "latest",
+    "@langchain/core": "latest",
+    "@langchain/anthropic": "latest",
+    "langchain": "latest"
   },
   "devDependencies": {
-    "@testing-library/dom": "^10.4.1",
+    "@testing-library/dom": "^10.3.2",
     "@testing-library/jest-dom": "^6.4.6",
     "@testing-library/react": "^16.0.0",
     "@types/node": "^20",

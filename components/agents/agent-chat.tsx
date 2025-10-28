@@ -3,7 +3,7 @@
 // with the agent workflow, especially when the system requires user input.
 'use client';
 
-import React, 'react';
+import React from 'react';
 
 export default function AgentChat() {
   return (

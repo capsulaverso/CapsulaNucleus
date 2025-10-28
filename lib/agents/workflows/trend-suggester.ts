@@ -13,6 +13,7 @@ export const trendSuggesterWorkflow: AgentWorkflow = {
   currentStep: 0,
   status: 'paused',
   context: {
+    originalRequest: '',
     baseTopic: '',
   },
   agentsInvolved: [],

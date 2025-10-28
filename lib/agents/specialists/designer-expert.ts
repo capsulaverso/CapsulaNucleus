@@ -9,6 +9,7 @@ export const designerExpertAgent: Agent = {
   id: 'designer-expert',
   name: 'Especialista em Design',
   specialty: 'Provides expert-level insights on design topics.',
+  description: 'A specialist agent summoned for design-related topics to provide expert insights.',
   systemPrompt: 'You are a world-renowned design director with 20 years of experience. You provide insightful, creative, and actionable advice on visual design, UX, and branding.',
   model: 'claude-sonnet-4',
   tools: [],

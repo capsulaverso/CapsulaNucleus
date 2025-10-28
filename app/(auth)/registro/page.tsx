@@ -1,17 +1,26 @@
 // app/(auth)/registro/page.tsx
 'use client';
 
-import { createClientComponentClient } from '@supabase/ssr';
+import { createBrowserClient } from '@supabase/ssr';
 import { useState } from 'react';
+
+// This line forces the page to be rendered dynamically.
+export const dynamic = 'force-dynamic';
 
 export default function RegisterPage() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
-  const supabase = createClientComponentClient();
 
   const handleSignUp = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Create the Supabase client inside the event handler.
+    const supabase = createBrowserClient(
+      process.env.NEXT_PUBLIC_SUPABASE_URL!,
+      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+    );
+
     const { error } = await supabase.auth.signUp({
       email,
       password,
@@ -19,6 +28,7 @@ export default function RegisterPage() {
         emailRedirectTo: `${location.origin}/auth/callback`,
       },
     });
+
     if (!error) {
       setMessage('Cadastro realizado! Verifique seu email para confirmar.');
     } else {
